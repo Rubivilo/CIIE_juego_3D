@@ -2,7 +2,7 @@
 #     https://github.com/github/gitignore/blob/master/Unity.gitignore
 
 /[Ll]ibrary/
-/[Uu]serSettings/
+/[Uu]ser[Ss]ettings/
 [Tt]emp/
 [Oo]bj/
 /[Bb]uild/
@@ -47,17 +47,17 @@ sysinfo.txt
 
 # Builds
 *.apk
+*.aab
 *.unitypackage
+*.app
 
 # Crashlytics generated file
 crashlytics-build.properties
 
-# Windows
-Thumbs.db
-Thumbs.db.meta
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
-# MacOS
-*.DS_Store
+# Temporary auto-generated Android Assets
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# VS Code
-*.vscode
