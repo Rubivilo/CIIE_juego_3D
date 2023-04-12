@@ -6,24 +6,33 @@ public class BreakOnContact : MonoBehaviour
 {
     public GameObject originalObject;
     public GameObject brokenObject;
+    public int rotation;
 
     private GameObject brknObj;
     // Start is called before the first frame update
-   
+    
 
     void OnCollisionEnter (Collision other){
-        Debug.Log("si entra");
-        if (originalObject != null ){
+        
+        if (originalObject ){
+            
             originalObject.SetActive(false);
-            if (brokenObject != null){
+            if (brokenObject){
                 brknObj=Instantiate(brokenObject) as GameObject ;
-                brknObj.transform.position=originalObject.transform.position;
-                brknObj.transform.rotation=originalObject.transform.rotation;
+                brknObj.transform.SetPositionAndRotation(originalObject.transform.position,originalObject.transform.rotation);
+                
                 Destroy(brknObj, 5);
-
+                Destroy(originalObject, 5);
+                
             }
         }
+        
     }
     // Update is called once per frame
-    
+    private void Update(){
+        if (originalObject.activeSelf){
+            originalObject.transform.Rotate(rotation,0,0);
+        }
+    }
+
 }
