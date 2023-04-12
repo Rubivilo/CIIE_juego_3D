@@ -38,7 +38,6 @@ public class ThrowingScript : MonoBehaviour
         {
             Throw();
         }
-        print(throwUpwardForce);
     }
 
     private void Throw()
