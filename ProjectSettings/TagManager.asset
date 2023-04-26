@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Opciones
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - Character
   - Ground
@@ -40,6 +41,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
+  - name: Enemy
     uniqueID: 0
     locked: 0
