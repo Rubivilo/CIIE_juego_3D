@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class EntreEscenas : MonoBehaviour
 {
+    public static EntreEscenas instancia;
     private void Awake()
     {
-        var noDestruirEntreEscenas = FindObjectsOfType<EntreEscenas>();
-        if (noDestruirEntreEscenas.Length > 1)
+        if (instancia)
         {
-            Destroy(gameObject);
-            return;
+            Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(gameObject);
+        else
+        {
+            instancia = this;
+            DontDestroyOnLoad(gameObject);
+        }
+            
     }
 
     // Start is called before the first frame update
