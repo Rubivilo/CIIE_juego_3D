@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: -0.1633083, y: -0.650366, z: 0.20872568, w: 0.71189046}
   m_LocalPosition: {x: -0.070007324, y: 0.3700086, z: -1.3700027}
   m_LocalScale: {x: 1.3401002, y: 0.3615993, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6210543070658856764}
   m_RootOrder: 1
@@ -71,6 +72,7 @@ Transform:
   m_LocalRotation: {x: -0.09020617, y: -0.0034570338, z: -0.038139243, w: 0.99518657}
   m_LocalPosition: {x: 0.32000732, y: 4.9700084, z: 0.083999634}
   m_LocalScale: {x: 0.67240477, y: 2.7999005, z: 0.621405}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6210543070658856764}
   m_RootOrder: 4
@@ -115,6 +117,7 @@ Transform:
   m_LocalRotation: {x: -0.22819805, y: -0.020656902, z: 0.91937184, w: 0.31977254}
   m_LocalPosition: {x: 0.940979, y: 0.3700086, z: 0.6499939}
   m_LocalScale: {x: 1.3400999, y: 0.36159936, z: 0.87069}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6210543070658856764}
   m_RootOrder: 2
@@ -159,6 +162,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.11999512, y: 1.7900085, z: 0.049995422}
   m_LocalScale: {x: 0.6724047, y: 2.7999, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6210543070658856764}
   m_RootOrder: 3
@@ -203,6 +207,7 @@ Transform:
   m_LocalRotation: {x: 0.07206877, y: 0.19067737, z: 0.2550335, w: 0.9452017}
   m_LocalPosition: {x: -1.0700073, y: 0.3700086, z: 0.4399948}
   m_LocalScale: {x: 1.3401, y: 0.8782224, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6210543070658856764}
   m_RootOrder: 0
@@ -249,6 +254,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 488.6, y: -0.000008583069, z: 106.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1047617657231681009}
   - {fileID: 1047617655568347024}
@@ -286,6 +292,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

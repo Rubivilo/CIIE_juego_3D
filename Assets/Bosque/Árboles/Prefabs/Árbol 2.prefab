@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 839200384566114969}
   - component: {fileID: 839200384550092961}
   - component: {fileID: 839200384549121209}
+  - component: {fileID: 4107882662505746587}
   m_Layer: 0
   m_Name: "\xC1rbol 2"
   m_TagString: Untagged
@@ -29,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 488.2, y: -0.00000166893, z: 105.88333}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8124042829917844794}
   - {fileID: 567158886008720600}
@@ -64,6 +66,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -95,6 +98,30 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &4107882662505746587
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839200384546872589}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 2
+  m_AnimateCrossFading: 1
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &1813964895132594648
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,6 +149,7 @@ Transform:
   m_LocalRotation: {x: 0.18337914, y: -0, z: -0, w: 0.98304224}
   m_LocalPosition: {x: 0.034973145, y: 1.7000017, z: 0.23667145}
   m_LocalScale: {x: 0.69517, y: 1, z: 0.85612935}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 839200384547255319}
   m_RootOrder: 1
@@ -166,6 +194,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.034973145, y: 3.9200017, z: 0.52667236}
   m_LocalScale: {x: 0.69517, y: 3.115604, z: 0.8561293}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 839200384547255319}
   m_RootOrder: 2
@@ -210,6 +239,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.02999878, y: 0.5220017, z: -0.10333252}
   m_LocalScale: {x: 1, y: 1, z: 1.1819439}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 839200384547255319}
   m_RootOrder: 0
