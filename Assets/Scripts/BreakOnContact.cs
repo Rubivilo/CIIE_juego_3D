@@ -13,21 +13,17 @@ public class BreakOnContact : MonoBehaviour
     
 
     void OnCollisionEnter (Collision other){
-
-        if (other.gameObject.tag == "Decorado" || other.gameObject.tag == "Enemy")
-            {
-
-            if (originalObject) {
-
-                originalObject.SetActive(false);
-                if (brokenObject) {
-                    brknObj = Instantiate(brokenObject) as GameObject;
-                    brknObj.transform.SetPositionAndRotation(originalObject.transform.position, originalObject.transform.rotation);
-
-                    Destroy(brknObj, 5);
-                    Destroy(originalObject, 5);
-
-                }
+        
+        if (originalObject ){
+            
+            originalObject.SetActive(false);
+            if (brokenObject){
+                brknObj=Instantiate(brokenObject) as GameObject ;
+                brknObj.transform.SetPositionAndRotation(originalObject.transform.position,originalObject.transform.rotation);
+                
+                Destroy(brknObj, 5);
+                Destroy(originalObject, 5);
+                
             }
         }
         

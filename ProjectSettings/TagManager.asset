@@ -7,7 +7,6 @@ TagManager:
   - CinemachineTarget
   - Opciones
   - Enemy
-  - Decorado
   layers:
   - Default
   - TransparentFX
