@@ -8,6 +8,7 @@ TagManager:
   - Opciones
   - Enemy
   - Decorado
+  - Inicio
   layers:
   - Default
   - TransparentFX

@@ -19,4 +19,10 @@ public class CambiarNivel : MonoBehaviour
         }
 
     }
+
+    public void BotonVolverMenu()
+    {
+        if (SceneManager.GetActiveScene().name != "Menu")
+            CambiarEscena("Menu");
+    }
 }
