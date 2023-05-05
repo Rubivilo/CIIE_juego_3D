@@ -11,12 +11,8 @@ public class CambiarNivel : MonoBehaviour
         SceneManager.LoadScene(nombre);
     }
 
-    //Si el jugador colisiona con el objeto, cambiar escena
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player")) {
-            CambiarEscena("Nivel 2");
-        }
-
+        CambiarEscena("Escena2");
     }
 }
