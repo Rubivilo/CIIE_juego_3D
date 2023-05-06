@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class Timer : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class Timer : MonoBehaviour
 
     [SerializeField] int min, seg;
     [SerializeField] TMP_Text tiempo;
+    public string siguienteEscena;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +24,13 @@ public class Timer : MonoBehaviour
     void Update()
     {
         currentTime -= Time.deltaTime;
-        
+
         if (currentTime < 0)
         {
             currentTime = 0;
-            // Cambiar escena
+            if (!string.IsNullOrEmpty(siguienteEscena))
+                // Cambiar escena
+                SceneManager.LoadScene(siguienteEscena);
         }
         int tempMin = Mathf.FloorToInt(currentTime / 60);
         int tempSeg = Mathf.FloorToInt(currentTime % 60);
