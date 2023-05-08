@@ -20,6 +20,7 @@ public class PotaScript : MonoBehaviour
     float length;
     private Vector3 scaleChange = new Vector3(0,0.1f,0);
     private Vector3 OGscale = new Vector3(0.2f,0,0.2f);
+    float aux=0;
     private Vector3 posFix = new Vector3(0,-0.2f,0);
     
     private void Start()
@@ -27,11 +28,17 @@ public class PotaScript : MonoBehaviour
         barfCilinder.SetActive(false);
         readyToThrow = true;
     }
-
+    void OnTriggerEnter(Collider other)
+    {
+        
+        Debug.Log("COLLISION");
+        
+    }
     // Update is called once per frame
     void Update()
     {
         barfCilinder.transform.SetPositionAndRotation(cam.position,cam.rotation);
+        posFix = new Vector3(0, -0.2f, aux);
         barfCilinder.transform.Translate(posFix);
        
         barfCilinder.transform.Rotate(90,0,0);
@@ -45,14 +52,17 @@ public class PotaScript : MonoBehaviour
         {
             barfCilinder.SetActive(false);
             barfCilinder.transform.localScale=OGscale;
+            aux = 0;
         }
     }
 
 
     private void Vomit()
     {
-        
-        barfCilinder.transform.localScale+=scaleChange;
-
+        if (aux < 3)
+        {
+            barfCilinder.transform.localScale += scaleChange;
+            aux += 0.1f;
+        }
     }
 }
